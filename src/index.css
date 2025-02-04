@@ -1,0 +1,19 @@
+@import url('./components/Navbar.css');
+@import url('./components/hero-section.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}

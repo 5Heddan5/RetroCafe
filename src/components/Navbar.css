@@ -1,0 +1,25 @@
+.navbar {
+  background-color: rgba(26, 1, 8, 0.589); /* purple with 50% opacity */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  gap: 5rem;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "Spirax", sans-serif;
+  font-size: 2rem
+}
