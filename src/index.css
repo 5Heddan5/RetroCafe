@@ -7,6 +7,9 @@
     box-sizing: border-box;
 }
 
+body {
+  background-color: darkred;
+}
 .container {
   position: relative;
 }
