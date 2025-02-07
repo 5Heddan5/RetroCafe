@@ -33,19 +33,27 @@
   grid-row: 1;
   position: absolute;
   top: 40%;
-  left: 45%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   z-index: 1;
-  font-size: 150%;
+  font-size: clamp(1rem, 3vw, 1.5rem);
   font-family: "Poiret One", sans-serif;
-  white-space: nowrap;
-  overflow: hidden;
+  margin-top: 1rem;
+  
   background-color: darkred;
-  padding: 1%;
-  opacity: 0.7;
-  width: 60%;
+  padding: 1vw; 
+  opacity: 0.8;
+  
+  width: 60%; 
+  min-width: 300px;
+  max-width: 700px; 
+  
   text-align: center;
+  display: block;
+  white-space: normal; 
+  word-wrap: break-word; 
+  line-height: 1.4; 
 }
 
 .image-text2 {
@@ -56,6 +64,8 @@
 .product-list p {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
 .image-menu {
@@ -67,7 +77,6 @@
   transform: translate(-50%, -50%);
   color: white;
   z-index: 1;
-  font-size: 150%;
   font-family: "Poiret One", sans-serif;
   white-space: nowrap;
   overflow: hidden;
@@ -76,40 +85,7 @@
   opacity: 0.7;
   width: 65%;
   text-align: center;
+  padding: 1.5vw 4vw;
+  margin-top: 1rem;
 }
 
-@media (max-width: 768px) {
-  .image-title {
-    font-size: 3.5rem;
-  }
-  .image-text1, .image-text2 {
-    font-size: 110%;
-  }
-  .image-menu {
-    font-size: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .image-title {
-    font-size: 2.5rem;
-  }
-  .image-text1, .image-text2 {
-    font-size: 90%;
-  }
-  .image-menu {
-    font-size: 80%;
-  }
-}
-
-@media (max-width: 320px) {
-  .image-title {
-    font-size: 2rem;
-  }
-  .image-text1, .image-text2 {
-    font-size: 70%;
-  }
-  .image-menu {
-    font-size: 60%;
-  }
-}
