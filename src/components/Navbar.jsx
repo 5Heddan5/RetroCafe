@@ -5,9 +5,9 @@ export const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="buttons">
-          {buttons.map((button) => {
+          {buttons.map((button, index) => {
             return (
-              <button className="button" key={button.name}>
+              <button className="button" key={index}>
                 {button.name}
               </button>
             );
