@@ -1,19 +1,25 @@
-const buttons = [{ name: "Hot" }, { name: "Juicy" }, { name: "Cozy" }];
+import images from './data';
 
 export const Navbar = () => {
+  const handleScroll = (id) => {
+    document.getElementById(id).scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
+
   return (
-    <>
-      <nav className="navbar">
-        <div className="buttons">
-          {buttons.map((button, index) => {
-            return (
-              <button className="button" key={index}>
-                {button.name}
-              </button>
-            );
-          })}
-        </div>
-      </nav>
-    </>
+    <nav className="navbar">
+      <div className="buttons">
+        {images.map((image, index) => (
+          <button
+            key={index}
+            className="button"
+            onClick={() => handleScroll(image.id)} 
+          >
+            {image.title} 
+          </button>
+        ))}
+      </div>
+    </nav>
   );
 };
